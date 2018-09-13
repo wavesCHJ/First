@@ -64,3 +64,15 @@ d = {5:6}
 d[t] = 2
 print(d[t])
 """
+"""
+t = (1, [2, 3])
+print(t)
+d = {5:6}
+d[t] = 2
+print(d[t])
+"""
+"""
+报错
+TypeError: unhashable type: 'list'
+因为t里的[2,3]可改变，因此t虽然是tuple（不变对象），但是内容实际上是可变的，因此无法hash
+"""
