@@ -79,7 +79,7 @@ print(d[t])
 报错
 TypeError: unhashable type: 'list'
 
-因为t里的[2,3]可改变，因此t虽然是tuple（不变对象），但是内容实际上是变了的，因此无法hash
+因为t里的[2,3]可改变，因此t虽然是tuple（不变对象），但是内容实际上是可变的，因此无法hash
 """
 
 
