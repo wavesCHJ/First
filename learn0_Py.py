@@ -69,7 +69,7 @@ print('\n')
 print("输出中文！")
 print("Hello, %s" % "world")
 print('Hi, %s, you have $%d.' % ('waves', 1000))
-print('%2d-%02d' % (3, 1))
+print('%2d-%3d' % (3, 1)) #输出占多少位置
 print('%.2f' % 3.1415926)
 #如果不太确定应该用什么，%s永远起作用，它会把任何数据类型转换为字符串
 
