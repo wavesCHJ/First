@@ -68,5 +68,18 @@ tuple一开始指向的list并没有改成别的list,
 即指向'a',就不能改成指向'b',
 指向一个list,就不能改成指向其他对象,但指向的这个list本身是可变的.
 """
+"""
+t = (1, [2, 3])
+print(t)
+d = {5:6}
+d[t] = 2
+print(d[t])
+"""
+"""
+报错
+TypeError: unhashable type: 'list'
+
+因为t里的[2,3]可改变，因此t虽然是tuple（不变对象），但是内容实际上是变了的，因此无法hash
+"""
 
 
