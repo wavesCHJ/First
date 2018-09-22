@@ -144,7 +144,7 @@ assert not is_valid_email('mr-bob@example.com')
 print('ok')
 
 
-#写正则表达式时最好街上^和$位置符，不然会出意外
+#写正则表达式时最好加上^和$位置符，不然会出意外
 if (re.match(r'^[\w+.]*$', 'd-.-d')):
     print('???')
 if (re.match(r'[\w+.]*', 'd-.-d')):
