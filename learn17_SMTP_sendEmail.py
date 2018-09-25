@@ -28,9 +28,9 @@ def _format_addr(s):
 #输入Email地址和口令
 from_addr = input('From: ')
 from_addr = 'waveschj@163.com'
-#这里的密码一定是授权码，163邮箱原始密码不行。
+#这里的密码一定是授权码，163邮箱原始密码不行。授权码在邮箱里设置
+password = 'next***'
 password = input('Password: ')
-password = 'next503'
 # 输入SMTP服务器地址:这里我们用smtp.163.com
 smtp_server = input('SMTP server: ')
 smtp_server = 'smtp.163.com'
